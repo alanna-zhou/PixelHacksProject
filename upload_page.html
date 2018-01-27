@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <label for="input-folder-1">Upload File From Folder</label>
+<div class="file-loading">
+    <input id="input-folder-1" type="file" webkitdirectory>
+</div>
+<script>
+$(document).on('ready', function() {
+    $("#input-folder-1").fileinput({
+        browseLabel: 'Select Folder...'
+    });
+});
+</script>
+  </body>
+</html>
