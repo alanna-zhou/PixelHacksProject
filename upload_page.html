@@ -1,20 +1,18 @@
 <!DOCTYPE html>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <html>
   <body>
+    <h1>
     <label for="input-folder-1">Upload Map</label>
+  </h1>
 <div class="file-loading">
     <input id="input-folder-1" type="file" webkitdirectory>
 </div>
-<a href="#" onclick="window.location='home_page.html'" class="previous round">&#8249;</a>
-<a href="#" onclick="window.location='nav_page.html'" class="next round">&#8250;</a>
-<script>
-$(document).on('ready', function() {
-    $("#input-folder-1").fileinput({
-        browseLabel: 'Select Folder...'
-    });
-});
+<div class="container">
+       <a href="#" onclick="window.location='nav_page.html'" class="btn btn-info btn-lg">
+         <span class="glyphicon glyphicon-forward"></span>
+       </a>
 
-
-</script>
+   </div>
   </body>
 </html>
