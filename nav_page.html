@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="home_page.css">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="nav_page.js"></script>
 <html>
 <title>Map Me</title>
-  <link rel="shortcut icon" href="MapMeLogoForTab.png"/>
+<head>
+    <link rel="shortcut icon" href="MapMeLogoForTab.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- necessary to show button -->
+    <link rel="stylesheet" href="home_page.css">
+
+</head>
+
 <body>
     <header class="w3-panel w3-center" style="padding:20px 16px">
         <h1>Navigation</h1>
@@ -16,7 +16,7 @@
             <div class="padding-top-50-div">
 
               <div class="form-group">
-                <legend>Select Destination</legend>
+                <legend style="color: white">Select Destination</legend>
                 <script type="text/javascript">
                 function changeFunc() {
                   var scrollSelect = document.getElementById("scrollSelect");
@@ -42,8 +42,14 @@
                   else if (imgName == "Panera Bread") {
                     alert("panera");
                   }
+                  else if (imgName == "Sears") {
+                    alert("sears");
+                  }
+                  else if (imgName == "JCPenney") {
+                    image.src = "mall_map_jcpenney.png";
+                  }
                   else {
-                    alert("oops");
+                    alert("sorry, not destination found");
                   }
                 }
                 </script>
@@ -77,15 +83,17 @@
         <img id="mallMap" src="mall_map.png"/>
 </body>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="home_page.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="nav_page.js"></script>
+
 <title>Map Me</title>
 
-<head>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- necessary to show button -->
-    <link rel="stylesheet" href="home_page.css">
-
-</head>
 
 <body>
     <br></br>
@@ -133,7 +141,7 @@
 
                         <p>
                             <button type="button" onclick="window.location='home_page.html'" class="btn btn-default btn-sm">
-         <span class="glyphicon glyphicon-circle-arrow-right"></span>
+         <span class="glyphicon glyphicon-arrow-right"></span>
        </button>
                         </p>
 
