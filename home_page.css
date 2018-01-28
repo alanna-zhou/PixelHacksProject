@@ -1,8 +1,48 @@
 body {
-    background-color: lightblue;
+    /* background-color: lightblue; */
+    background: linear - gradient(#9999FF, # 72 BCD4);
 }
 
 h1 {
     color: white;
-    text-align: center;
+    text - align: center;
 }
+
+img {
+    display: block;
+    margin - left: auto;
+    margin - right: auto;
+}
+
+.button {
+    position: absolute;
+    bottom: 10 px;
+}
+
+span.glyphicon - camera {
+    font - size: 15e m;
+}
+
+
+span.glyphicon - circle - arrow - right {
+        font - size: 8e m;
+    }
+
+    .center - div {
+        text - align: center;
+
+    }
+
+form {
+    display: inline - block;
+    text - align: center;
+    padding - top: 50 px;
+}
+
+.padding - top - div {
+        padding - top: 200 px;
+    }
+
+    .padding - top - 50 - div {
+        padding - top: 50 px;
+    }
