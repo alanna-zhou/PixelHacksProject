@@ -5,44 +5,82 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="nav_page.js"></script>
 <html>
 <title>Map Me</title>
-
+  <link rel="shortcut icon" href="MapMeLogoForTab.png"/>
 <body>
     <header class="w3-panel w3-center" style="padding:20px 16px">
         <h1>Navigation</h1>
         <div class="center-div">
             <div class="padding-top-50-div">
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+
+              <div class="form-group">
+                <legend>Select Destination</legend>
+                <script type="text/javascript">
+                function changeFunc() {
+                  var scrollSelect = document.getElementById("scrollSelect");
+                  var selectedValue = scrollSelect.options[scrollSelect.selectedIndex].value;
+                  changeImage(selectedValue);
+
+                }
+
+                function changeImage(imgName) {
+                  image = document.getElementById('mallMap');
+                  if (imgName == "Ashley's Bear & Grill") {
+                    alert("hi");
+                  }
+                  else if (imgName == "Kohl's") {
+                    image.src = "mall_map_kohls.png";
+                  }
+                  else if (imgName == "Longhorn Steakhouse") {
+                    alert("longhorn");
+                  }
+                  else if (imgName == "Macy's") {
+                    alert("macy");
+                  }
+                  else if (imgName == "Panera Bread") {
+                    alert("panera");
+                  }
+                  else {
+                    alert("oops");
+                  }
+                }
+                </script>
+                <select class="form-control" id="scrollSelect" onchange="changeFunc();">
+                  <option disabled selected value> -- select an option -- </option>
+                  <option>Ashley's Bear & Grill</option>
+                  <option>Kohl's</option>
+                  <option>Longhorn Steakhouse</option>
+                  <option>Macy's</option>
+                  <option>Panera Bread</option>
+                  <option>Sears</option>
+                  <option>JCPenney</option>
+                </select>
+              </div>
+                <!-- <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Destination
     <span class="caret"></span></button>
                     <ul class="dropdown-menu">
+                        <li><a href="#">Ashley's Beer & Grill</a></li>
                         <li><a href="#">Kohl's</a></li>
+                        <li><a href="#">Longhorn Steakhouse</a></li>
                         <li><a href="#">Macy's</a></li>
+                        <li><a href="#">Panera Bread</a></li>
                         <li><a href="#">Sears</a></li>
                         <li><a href="#">JCPenney</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
 
-        <img src="mall_map.png">
+        <img id="mallMap" src="mall_map.png"/>
 </body>
 
-</html>
-
-
-
-
-
-<!--1st page-->
-<html>
-<!DOCTYPE html>
-<html>
 <title>Map Me</title>
 
 <head>
-    <link rel="shortcut icon" href="MapMeLogoWithBlue.png" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- necessary to show button -->
     <link rel="stylesheet" href="home_page.css">
@@ -94,7 +132,7 @@
 
 
                         <p>
-                            <button type="button" onclick="window.location='arrived_page.html'" class="btn btn-default btn-sm">
+                            <button type="button" onclick="window.location='home_page.html'" class="btn btn-default btn-sm">
          <span class="glyphicon glyphicon-circle-arrow-right"></span>
        </button>
                         </p>

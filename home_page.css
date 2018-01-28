@@ -1,48 +1,53 @@
 body {
     /* background-color: lightblue; */
-    background: linear - gradient(#9999FF, # 72 BCD4);
+    background: linear-gradient(#9999FF, #72BCD4);
 }
 
 h1 {
     color: white;
-    text - align: center;
+    text-align: center;
 }
 
 img {
     display: block;
-    margin - left: auto;
-    margin - right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button {
-    position: absolute;
-    bottom: 10 px;
+  position: absolute;
+    bottom: 10px;
 }
 
-span.glyphicon - camera {
-    font - size: 15e m;
+span.glyphicon-camera {
+    font-size: 15em;
 }
 
 
-span.glyphicon - circle - arrow - right {
-        font - size: 8e m;
-    }
+span.glyphicon-circle-arrow-right {
+  font-size: 8em;
+}
 
-    .center - div {
-        text - align: center;
+.center-div
+{
+  text-align: center;
 
-    }
+}
 
 form {
-    display: inline - block;
-    text - align: center;
-    padding - top: 50 px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 50px;
 }
 
-.padding - top - div {
-        padding - top: 200 px;
-    }
+.padding-top-div {
+    padding-top: 200px;
+}
 
-    .padding - top - 50 - div {
-        padding - top: 50 px;
-    }
+.padding-top-50-div {
+    padding-top: 50px;
+}
+
+.dropdown {text-align:center;}
+.button, .dropdown-menu {margin:10px auto}
+.dropdown-menu {width:200px; left:50%; margin-left:-100px;}
