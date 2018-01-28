@@ -27,20 +27,20 @@
 
                 function changeImage(imgName) {
                   image = document.getElementById('mallMap');
-                  if (imgName == "Ashley's Bear & Grill") {
-                    alert("hi");
+                  if (imgName == "Ashley's Beer & Grill") {
+                    image.src = "mall_map_beer_grill.png";
                   }
                   else if (imgName == "Kohl's") {
-                    alert("kohl");
+                    image.src = "mall_map_kohls.png";
                   }
                   else if (imgName == "Longhorn Steakhouse") {
-                    alert("longhorn");
+                    image.src = "mall_map_steakhouse.png";
                   }
                   else if (imgName == "Macy's") {
-                    alert("macy");
+                    image.src = "mall_map_macys.png";
                   }
                   else if (imgName == "Panera Bread") {
-                    alert("panera");
+                    image.src = "mall_map_panera.png";
                   }
                   else if (imgName == "Sears") {
                     image.src = "mall_map_sears.png";
@@ -55,7 +55,7 @@
                 </script>
                 <select class="form-control" id="scrollSelect" onchange="changeFunc();">
                   <option disabled selected value> -- select an option -- </option>
-                  <option>Ashley's Bear & Grill</option>
+                  <option>Ashley's Beer & Grill</option>
                   <option>Kohl's</option>
                   <option>Longhorn Steakhouse</option>
                   <option>Macy's</option>
